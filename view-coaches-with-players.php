@@ -8,16 +8,17 @@
     <div class="card-body">
       <h5 class="card-title"><?php echo $coach['coach_name']; ?></h5>
       <p class="card-text">
+            <ul class="list-group">
         <?p>
           $coach = selectPlayersByCoaches($coach['coaches_id']);
-            while ($course = $courses->fetch_assoc())
+            while ($coache = $coaches->fetch_assoc()) {
               ?>
-            
+                <li class="list-group-item"><?php echo $coach['player_name']; ?> - <?php echo $coach['level']; ?> <?php echo $coach['practice_time']; ?> </li>
+                        
             <?php
-            {
-              
             }
           ?>
+        </ul>
       </p>
     </div>
     <div class="card-footer">
