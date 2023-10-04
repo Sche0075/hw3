@@ -9,7 +9,14 @@
       <h5 class="card-title"><?php echo $coach['coach_name']; ?></h5>
       <p class="card-text">
         <?p>
-          $players = select
+          $coach = selectPlayersByCoaches($coach['coaches_id']);
+            while ($course = $courses->fetch_assoc())
+              ?>
+            
+            <?php
+            {
+              
+            }
           ?>
       </p>
     </div>
@@ -17,17 +24,8 @@
       <small class="text-body-secondary">Position: <?php echo $coach['coach_position']; ?></small>
     </div>
   </div>
-            <tr>
 
-                <td><?php echo $coach['coaches_id']; ?></td>
-                <td><?php echo $coach['coach_name']; ?></td> 
-                <td><?php echo $coach['coach_position']; ?></td>
-                <td><?php echo $coach['coach_age']; ?></td>
-                <td><a href="players-by-coaches.php?id=<?php echo $coach['coaches_id']; ?>">Players</a></td>
-              
-            </tr>
-
-        <?php
+<?php
           }
         ?>     
 </div>
