@@ -6,6 +6,6 @@ $pageTitle = "Coaches";
 include "view-header.php";
 
 $coaches = selectCoaches();
-include "view-instructors.php";
+include "view-coaches.php";
 include "view-footer.php";
 ?>
