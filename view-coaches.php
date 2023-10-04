@@ -13,7 +13,7 @@
       
       <tbody>
         <?php
-          while ($coach = $coaches->_assoc()) {
+          while ($coach = $coaches->fetch_assoc()) {
         ?>
             <tr>
 
