@@ -18,9 +18,9 @@
             <tr>
 
                 <td><?php echo $coach['coaches_id']; ?></td>
-                <td><?php echo $coach['coache_name']; ?></td> 
-                <td><?php echo $coach['coache_position']; ?></td>
-                <td><?php echo $coach['coache_age']; ?></td>
+                <td><?php echo $coach['coach_name']; ?></td> 
+                <td><?php echo $coach['coach_position']; ?></td>
+                <td><?php echo $coach['coach_age']; ?></td>
               
             </tr>
 
