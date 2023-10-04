@@ -9,7 +9,7 @@
       <h5 class="card-title"><?php echo $coach['coach_name']; ?></h5>
       <p class="card-text">
             <ul class="list-group">
-        <?p>
+        <?php
           $coach = selectPlayersByCoaches($coach['coaches_id']);
             while ($coache = $coaches->fetch_assoc()) {
               ?>
