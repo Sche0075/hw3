@@ -1,4 +1,4 @@
-<h1>Players by Coaches</h1>
+<h1>Team by Player</h1>
 <div class="table-responsive">
   <table class="table">
     
