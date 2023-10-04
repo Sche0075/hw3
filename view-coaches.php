@@ -23,7 +23,7 @@
                 <td><?php echo $coach['coach_name']; ?></td> 
                 <td><?php echo $coach['coach_position']; ?></td>
                 <td><?php echo $coach['coach_age']; ?></td>
-                <td><a href="players-by-coaches.php?id=<?php echo $coach['coaches_id']; ?>"Players</a></td>
+                <td><a href="players-by-coaches.php?id=<?php echo $coach['coaches_id']; ?">Players</a></td>
               
             </tr>
 
