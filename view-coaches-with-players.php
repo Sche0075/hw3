@@ -11,7 +11,7 @@
             <ul class="list-group">
         <?php
           $coach = selectPlayersByCoaches($coach['coaches_id']);
-            while ($coache = $coaches->fetch_assoc()) {
+            while ($coach = $coaches->fetch_assoc()) {
               ?>
                 <li class="list-group-item"><?php echo $coach['player_name']; ?> - <?php echo $coach['level']; ?> - <?php echo $coach['practice_time']; ?>  </li>
                         
