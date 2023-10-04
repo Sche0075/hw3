@@ -17,10 +17,10 @@
         ?>
             <tr>
 
-                <td><?php echo $coach['coaches_id']; ?></td>
-                <td><?php echo $coach['coach_name']; ?></td> 
-                <td><?php echo $coach['coach_position']; ?></td>
-                <td><?php echo $coach['coach_age']; ?></td>
+                <td><?php echo $player['player_id']; ?></td>
+                <td><?php echo $player['player_name']; ?></td> 
+                <td><?php echo $player['player_position']; ?></td>
+                <td><?php echo $player['player_age']; ?></td>
               
             </tr>
 
