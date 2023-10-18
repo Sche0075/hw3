@@ -1,11 +1,11 @@
 <?php
-require_once("util-db.php");
-require_once("model-coaches.php");
+require_once("b1-util-db.php");
+require_once("m1-model-coaches.php");
 
 $pageTitle = "Coaches";
-include "view-header.php";
+include "a2-view-header.php";
 
 $coaches = selectCoaches();
-include "view-coaches.php";
-include "view-footer.php";
+include "v1-view-coaches.php";
+include "a3-view-footer.php";
 ?>
