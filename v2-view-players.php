@@ -24,7 +24,7 @@
                 <td><?php echo $player['player_age']; ?></td>
                 <td>
                       <form method="post" action="c4-team-by-player.php">
-                        <input type="hidden" name="pid" value="<?php echo $player['player_id']; ?>">
+                        <input type="hidden" name="tid" value="<?php echo $player['player_id']; ?>">
                         <button type="submit" class="btn btn-primary">Teams</button>
                       </form>
                 </td>
