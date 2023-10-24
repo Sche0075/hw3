@@ -26,7 +26,10 @@
           <a class="nav-link" href="c2-players.php">Players</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="c5-coaches-with-players.php">coaches-with-players</a>
+          <a class="nav-link" href="c6-leagues.php">Leagues</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="c5-coaches-with-players.php">Coaches-with-Players</a>
         </li>
       </ul>
     </div>
