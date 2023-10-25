@@ -35,8 +35,10 @@
                 <td><?php echo $coach['coach_name']; ?></td> 
                 <td><?php echo $coach['coach_position']; ?></td>
                 <td><?php echo $coach['coach_age']; ?></td>
-                <td></td>
-                <td>
+                <td><?php
+                     include "n1-editform-coaches.php";
+                     ?></td>
+                   <td>
                     <form method="post" action="">
                         <input type="hidden" name="cid" value="<?php echo $coach['coaches_id']; ?>">
                         <input type="hidden" name="actionType" value="Delete">
