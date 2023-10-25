@@ -1,9 +1,9 @@
 <?php
 
-function selectPlayers() {
+function selectLeagues() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT player_id, player_name, player_position, player_age FROM `player`");
+        $stmt = $conn->prepare("SELECT league_id, league_director, league_agegroup, league_level FROM `league`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
