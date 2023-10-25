@@ -18,7 +18,7 @@ function insertCoaches($cName, $cAgegroup, $cAge) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `coaches` set (`coach_name`, `coach_position`, `coach_age`) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $cName, $cAgegroup, $cAge);
+        $stmt->bind_param("sss", $cName, $cPosition, $cAge);
         $succcess = $stmt->execute();
         $conn->close();
         return $success;
@@ -32,7 +32,7 @@ function updateCoaches($cName, $cAgegroup, $cAge) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `coaches` set `coach_name` = ?, `coach_position` = ?, `coach_age` = ? where coaches_id = ?");
-        $stmt->bind_param("sssi", $cName, $cAgegroup, $cAge, $cid);
+        $stmt->bind_param("sssi", $cName, $cPosition, $cAge, $cid);
         $succcess = $stmt->execute();
         $conn->close();
         return $success;
