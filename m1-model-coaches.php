@@ -28,7 +28,7 @@ function insertCoaches($cName, $cAgegroup, $cAge) {
     }
 }
 
-function updateCoaches($cName, $cAgegroup, $cAge) {
+function updateCoaches($cName, $cAgegroup, $cAge, $cid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `coaches` set `coach_name` = ?, `coach_position` = ?, `coach_age` = ? where coaches_id = ?");
