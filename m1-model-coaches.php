@@ -19,7 +19,7 @@ function insertCoaches($cName, $cAgegroup, $cAge) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `coaches` (`coach_name`, `coach_position`, `coach_age`) VALUES (?, ?, ?)");
         $stmt->bind_param("sss", $cName, $cPosition, $cAge);
-        $succcess = $stmt->execute();
+        $success = $stmt->execute();
         $conn->close();
         return $success;
     } catch (Exception $e) {
@@ -33,7 +33,7 @@ function updateCoaches($cName, $cAgegroup, $cAge) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `coaches` set `coach_name` = ?, `coach_position` = ?, `coach_age` = ? where coaches_id = ?");
         $stmt->bind_param("sssi", $cName, $cPosition, $cAge, $cid);
-        $succcess = $stmt->execute();
+        $success = $stmt->execute();
         $conn->close();
         return $success;
     } catch (Exception $e) {
@@ -47,7 +47,7 @@ function deleteCoaches($cid) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from coaches where coaches_id = ?");
         $stmt->bind_param("i", $cid);
-        $succcess = $stmt->execute();
+        $success = $stmt->execute();
         $conn->close();
         return $success;
     } catch (Exception $e) {
