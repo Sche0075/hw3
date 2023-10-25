@@ -3,7 +3,7 @@
       <h1>Coaches</h1>
   </div>
   <div class="col-auto">
-<?php>
+<?php
     include "n1-newform-coaches.php";
 ?>
   </div>
