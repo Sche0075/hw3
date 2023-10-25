@@ -1,10 +1,10 @@
-<h1>Players</h1>
+<h1>Leagues</h1>
 <div class="table-responsive">
   <table class="table">
     
     <thead>
       <tr>
-        <th>Dog</th>
+        <th>ID</th>
         <th>Name</th>
         <th>Position</th>
         <th>Age</th>
