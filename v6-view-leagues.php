@@ -5,9 +5,9 @@
     <thead>
       <tr>
         <th>ID</th>
-        <th>Name</th>
-        <th>Position</th>
-        <th>Age</th>
+        <th>Director</th>
+        <th>League Age Group</th>
+        <th>League Level</th>
         <th></th>
       </tr>
     </thead>
@@ -18,10 +18,10 @@
         ?>
             <tr>
 
-                <td><?php echo $player['player_id']; ?></td>
-                <td><?php echo $player['player_name']; ?></td> 
-                <td><?php echo $player['player_position']; ?></td>
-                <td><?php echo $player['player_age']; ?></td>
+                <td><?php echo $player['league_id']; ?></td>
+                <td><?php echo $player['league_director']; ?></td> 
+                <td><?php echo $player['league_agegroup']; ?></td>
+                <td><?php echo $player['league_level']; ?></td>
                 <td>
                       <form method="post" action="c4-team-by-player.php">
                         <input type="hidden" name="tid" value="<?php echo $player['player_id']; ?>">
