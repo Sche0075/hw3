@@ -5,7 +5,7 @@ require_once("m6-model-leagues.php");
 $pageTitle = "Leagues";
 include "a2-view-header.php";
 
-$players = selectPlayers();
+$leagues = selectLeagues();
 include "v6-view-leagues.php";
 include "a3-view-footer.php";
 ?>
