@@ -17,6 +17,18 @@ if (isset($_POST['actionType'])) {
   }  
 }
 
+if (isset($_POST['actionType'])) {
+  switch ($_POST['actionType']) {
+    case "Edit":
+     if (updateCoaches($_POST['cName'], $_POST['cPosition'], $_POST['cAge'], $_POST['cid'])) {
+       echo '<div class="alert alert-success" role="alert">Course edited.</div>';
+     } else {
+       echo '<div class="alert alert-danger" role="alert">Error.</div>';
+     }
+        break;    
+  }  
+}
+
 
 $coaches = selectCoaches();
 include "v1-view-coaches.php";
