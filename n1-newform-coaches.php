@@ -14,8 +14,8 @@
                 <h1 class="modal-title fs-5" id="newCoachModalLabel">New Coach</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-                 <!-- <div class="modal-body">
-                          <form method="post" action="">
+                  <div class="modal-body">
+                      <!--    <form method="post" action="">
                                     <div class="mb-3">
                                       <label for="cName" class="form-label">Coach Name</label>
                                       <input type="text" class="form-control" id="cName" name="cName">
@@ -33,8 +33,8 @@
                                   
                                 <input type="hidden" name="actionType" value="Add">
                               <button type="submit" class="btn btn-primary">Save</button>
-                          </form>
-                  </div>      -->
+                          </form> -->
+                  </div>      
         </div> 
   </div> 
 </div>
