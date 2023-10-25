@@ -18,16 +18,19 @@
         <form method="post" action="">
             <div class="mb-3">
               <label for="cName" class="form-label">Coach Name</label>
-              <input type="text" class="form-control" id="cName" name="cName>
+              <input type="text" class="form-control" id="cName" name="cName">
             </div>
+                
             <div class="mb-3">
               <label for="cPosition" class="form-label">Coach Position</label>
               <input type="text" class="form-control" id="cPosition" name="cPosition">
             </div>
+          
             <div class="mb-3">
               <label for="cAge" class="form-label">Coach Age</label>
               <input type="text" class="form-control" id="cAge" name="cAge">
             </div>   
+          
               <input type="hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Save</button>
         </form>
