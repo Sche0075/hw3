@@ -1,4 +1,4 @@
-<h1>Leagues - model not updated</h1>
+<h1>Players</h1>
 <div class="table-responsive">
   <table class="table">
     
@@ -9,21 +9,25 @@
         <th>Position</th>
         <th>Age</th>
         <th></th>
-        
       </tr>
     </thead>
       
       <tbody>
         <?php
-          while ($coach = $coaches->fetch_assoc()) {
+          while ($player = $players->fetch_assoc()) {
         ?>
             <tr>
 
-                <td><?php echo $coach['coaches_id']; ?></td>
-                <td><?php echo $coach['coach_name']; ?></td> 
-                <td><?php echo $coach['coach_position']; ?></td>
-                <td><?php echo $coach['coach_age']; ?></td>
-                <td><a href="c3-players-by-coaches.php?id=<?php echo $coach['coaches_id']; ?>">Players</a></td>
+                <td><?php echo $player['player_id']; ?></td>
+                <td><?php echo $player['player_name']; ?></td> 
+                <td><?php echo $player['player_position']; ?></td>
+                <td><?php echo $player['player_age']; ?></td>
+                <td>
+                      <form method="post" action="c4-team-by-player.php">
+                        <input type="hidden" name="tid" value="<?php echo $player['player_id']; ?>">
+                        <button type="submit" class="btn btn-primary">Team/Practice Time</button>
+                      </form>
+                </td>
               
             </tr>
 
