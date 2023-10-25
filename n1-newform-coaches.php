@@ -15,8 +15,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
                   <div class="modal-body">
-                      <!--    <form method="post" action="">
-                                    <div class="mb-3">
+                          <form method="post" action="">
+                                  <!--  <div class="mb-3">
                                       <label for="cName" class="form-label">Coach Name</label>
                                       <input type="text" class="form-control" id="cName" name="cName">
                                     </div>
@@ -30,10 +30,10 @@
                                       <label for="cAge" class="form-label">Coach Age</label>
                                       <input type="text" class="form-control" id="cAge" name="cAge">
                                     </div>   
-                                  
+                                  -->
                                 <input type="hidden" name="actionType" value="Add">
                               <button type="submit" class="btn btn-primary">Save</button>
-                          </form> -->
+                          </form> 
                   </div>      
         </div> 
   </div> 
