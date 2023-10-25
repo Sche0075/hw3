@@ -8,8 +8,8 @@ include "a2-view-header.php";
 if (isset($_POST['actionType'])) {
   switch($_POST['actionType']) {
     case "Add":
-      insertCoach
-    
+      insertCoaches($_POST['cName'],$_POST['cPosition'],$POST['cAge']);
+        break;    
   }
 }
 
