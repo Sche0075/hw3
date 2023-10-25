@@ -8,9 +8,13 @@ include "a2-view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-      insertCoaches($_POST['cName'], $_POST['cPosition'], $POST['cAge']);
+     if (insertCoaches($_POST['cName'], $_POST['cPosition'], $POST['cAge'])) {
+       echo '<div class="alert alert-success" role="alert">Course added.</div>';
+     } else {
+       echo '<div class="alert alert-danger" role="alert">Error.</div>';
+     }
         break;    
-  }
+  }  
 }
 
 
