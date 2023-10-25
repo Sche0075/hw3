@@ -17,7 +17,7 @@ function selectCoaches() {
 function insertCoaches($cName, $cAgegroup, $cAge) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `coaches` set (`coach_name`, `coach_position`, `coach_age`) VALUES (?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO `coaches` (`coach_name`, `coach_position`, `coach_age`) VALUES (?, ?, ?)");
         $stmt->bind_param("sss", $cName, $cPosition, $cAge);
         $succcess = $stmt->execute();
         $conn->close();
@@ -31,7 +31,7 @@ function insertCoaches($cName, $cAgegroup, $cAge) {
 function updateCoaches($cName, $cAgegroup, $cAge) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `coaches` set `coach_name` = ?, `coach_position` = ?, `coach_age` = ? where coaches_id = ?");
+        $stmt = $conn->prepare("update `coaches` set `coach_name` = ?, `coach_position` = ?, `coach_age` = ? where coaches_id = ?");
         $stmt->bind_param("sssi", $cName, $cPosition, $cAge, $cid);
         $succcess = $stmt->execute();
         $conn->close();
@@ -45,7 +45,7 @@ function updateCoaches($cName, $cAgegroup, $cAge) {
 function deleteCoaches($cid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from course where coaches_id = ?");
+        $stmt = $conn->prepare("delete from coaches where coaches_id = ?");
         $stmt->bind_param("i", $cid);
         $succcess = $stmt->execute();
         $conn->close();
