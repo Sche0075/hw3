@@ -32,7 +32,6 @@
                 <td><?php echo $coach['coach_name']; ?></td> 
                 <td><?php echo $coach['coach_position']; ?></td>
                 <td><?php echo $coach['coach_age']; ?></td>
-                <td><?phpinclude "n1-editform-coaches.php";?></td>
                 <td><a href="c3-players-by-coaches.php?id=<?php echo $coach['coaches_id']; ?>">Players</a></td>
               
             </tr>
