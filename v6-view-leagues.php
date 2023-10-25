@@ -4,7 +4,7 @@
     
     <thead>
       <tr>
-        <th>ID</th>
+        <th>Dog</th>
         <th>Name</th>
         <th>Position</th>
         <th>Age</th>
