@@ -19,7 +19,7 @@
             <div class="mb-3">
               <label for="cName" class="form-label">Coach Name</label>
               <input type="text" class="form-control" id="cName" name="cName">
-            </div>
+            <>
                 
             <div class="mb-3">
               <label for="cPosition" class="form-label">Coach Position</label>
