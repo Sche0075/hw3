@@ -1,11 +1,11 @@
 <?php
 require_once("b1-util-db.php");
-require_once("m2-model-players.php");
+require_once("m6-model-leagues.php");
 
-$pageTitle = "Players";
+$pageTitle = "Leagues";
 include "a2-view-header.php";
 
 $players = selectPlayers();
-include "v2-view-players.php";
+include "v6-view-leagues.php";
 include "a3-view-footer.php";
 ?>
