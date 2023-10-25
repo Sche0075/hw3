@@ -14,7 +14,7 @@ function selectCoaches() {
     }
 }
 
-function insertCoaches($cName, $cAgegroup, $cAge) {
+function insertCoaches($cName, $cPosition, $cAge) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `coaches` (`coach_name`, `coach_position`, `coach_age`) VALUES (?, ?, ?)");
@@ -28,7 +28,7 @@ function insertCoaches($cName, $cAgegroup, $cAge) {
     }
 }
 
-function updateCoaches($cName, $cAgegroup, $cAge, $cid) {
+function updateCoaches($cName, $cPosition, $cAge, $cid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `coaches` set `coach_name` = ?, `coach_position` = ?, `coach_age` = ? where coaches_id = ?");
