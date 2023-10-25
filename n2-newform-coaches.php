@@ -15,21 +15,20 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form method="post" action="">
             <div class="mb-3">
-              <label for="cName" class="form-label">New Coach</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              <label for="cName" class="form-label">Coach Name</label>
+              <input type="text" class="form-control" id="cName" name="cName>
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <label for="cPosition" class="form-label">Coach Position</label>
+              <input type="text" class="form-control" id="cPosition" name="cPosition>
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="mb-3">
+              <label for="cAge" class="form-label">Coach Age</label>
+              <input type="text" class="form-control" id="cAge" name="cAge>
+            </div>     
+            <button type="submit" class="btn btn-primary">Save</button>
         </form>
       </div>      
     </div>
