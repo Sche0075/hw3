@@ -14,14 +14,14 @@
       
       <tbody>
         <?php
-          while ($player = $players->fetch_assoc()) {
+          while ($league = $leagues->fetch_assoc()) {
         ?>
             <tr>
 
-                <td><?php echo $player['league_id']; ?></td>
-                <td><?php echo $player['league_director']; ?></td> 
-                <td><?php echo $player['league_agegroup']; ?></td>
-                <td><?php echo $player['league_level']; ?></td>
+                <td><?php echo $league['league_id']; ?></td>
+                <td><?php echo $league['league_director']; ?></td> 
+                <td><?php echo $league['league_agegroup']; ?></td>
+                <td><?php echo $league['league_level']; ?></td>
                 <td>
                       <form method="post" action="c4-team-by-player.php">
                         <input type="hidden" name="tid" value="<?php echo $player['player_id']; ?>">
