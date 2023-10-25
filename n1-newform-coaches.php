@@ -8,7 +8,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="newCoachModal" tabindex="-1" aria-labelledby="newCoachModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <!-- <div class="modal-dialog">
         <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="newCoachModalLabel">New Coach</h1>
@@ -36,5 +36,5 @@
                           </form>
                   </div>      
         </div>
-  </div>
+  </div> -->
 </div>
