@@ -8,7 +8,7 @@ include "a2-view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-     if (insertCoaches($_POST['cName'], $_POST['cPosition'], $_POST['cAge'])) {
+     if (insertPlayers($_POST['cName'], $_POST['cPosition'], $_POST['cAge'])) {
        echo '<div class="alert alert-success" role="alert">Course added.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
@@ -16,7 +16,7 @@ if (isset($_POST['actionType'])) {
         break;    
 
     case "Edit":
-     if (updateCoaches($_POST['cName'], $_POST['cPosition'], $_POST['cAge'], $_POST['cid'])) {
+     if (updatePlayers($_POST['cName'], $_POST['cPosition'], $_POST['cAge'], $_POST['cid'])) {
        echo '<div class="alert alert-success" role="alert">Course edited.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
@@ -24,7 +24,7 @@ if (isset($_POST['actionType'])) {
         break;    
    
     case "Delete":
-     if (deleteCoaches($_POST['cid'])) {
+     if (deletePlayers($_POST['cid'])) {
        echo '<div class="alert alert-success" role="alert">Course deleted.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
