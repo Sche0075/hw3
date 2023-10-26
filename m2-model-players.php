@@ -45,7 +45,7 @@ function updatePlayers($pName, $pPosition, $pAge, $pid) {
 function deletePlayers($pid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from coaches where player_id = ?");
+        $stmt = $conn->prepare("delete from player where player_id = ?");
         $stmt->bind_param("i", $pid);
         $success = $stmt->execute();
         $conn->close();
