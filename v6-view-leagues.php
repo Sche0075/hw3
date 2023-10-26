@@ -1,4 +1,13 @@
-<h1>Leagues</h1>
+<div class="row">
+  <div class="col">
+      <h1>Leagues</h1>
+  </div>
+  <div class="col-auto">
+<?php
+    include "n3-newform-leagues.php";
+?>
+  </div>
+</div>
 <div class="table-responsive">
   <table class="table">
     
