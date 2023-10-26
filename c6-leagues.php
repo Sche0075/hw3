@@ -8,24 +8,24 @@ include "a2-view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-     if (insertCoaches($_POST['cName'], $_POST['cPosition'], $_POST['cAge'])) {
-       echo '<div class="alert alert-success" role="alert">Course added.</div>';
+     if (insertLeagues($_POST['lDirector'], $_POST['lAgegroup'], $_POST['lLevel'])) {
+       echo '<div class="alert alert-success" role="alert">League added.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
      }
         break;    
 
     case "Edit":
-     if (updateCoaches($_POST['cName'], $_POST['cPosition'], $_POST['cAge'], $_POST['cid'])) {
-       echo '<div class="alert alert-success" role="alert">Course edited.</div>';
+     if (updateLeagues($_POST['lDirector'], $_POST['lAgegroup'], $_POST['lLevel'], $_POST['lid'])) {
+       echo '<div class="alert alert-success" role="alert">League edited.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
      }
         break;    
    
     case "Delete":
-     if (deleteCoaches($_POST['cid'])) {
-       echo '<div class="alert alert-success" role="alert">Course deleted.</div>';
+     if (deleteLeagues($_POST['lid'])) {
+       echo '<div class="alert alert-success" role="alert">League deleted.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
      }
