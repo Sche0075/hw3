@@ -18,6 +18,10 @@
         <th>League Age Group</th>
         <th>League Level</th>
         <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        
       </tr>
     </thead>
       
