@@ -17,7 +17,7 @@
                           <form method="post" action="">
                                     <div class="mb-3">
                                       <label for="cName<?php echo $coach['coaches_id']; ?>" class="form-label">Coach Name</label>
-                                      <input type="text" class="form-control" id="cName<?php echo $coach['coaches_id']; ?>" name="cName" value="<?php echo $coach['coaches_name']; ?>">
+                                      <input type="text" class="form-control" id="cName<?php echo $coach['coaches_id']; ?>" name="cName" value="<?php echo $coach['coach_name']; ?>">
                                     </div>
                                         
                                     <div class="mb-3">
@@ -30,7 +30,7 @@
                                       <input type="text" class="form-control" id="cAge<?php echo $coach['coaches_id']; ?>" name="cAge" value="<?php echo $coach['coach_age']; ?>">
                                     </div>   
                                   
-                                <input type="hidden" name="cid" value="<?php echo $coach['coacheses_id']; ?>">
+                                <input type="hidden" name="cid" value="<?php echo $coach['coaches_id']; ?>">
                                 <input type="hidden" name="actionType" value="Edit">
                               <button type="submit" class="btn btn-primary">Save</button>
                           </form> 
