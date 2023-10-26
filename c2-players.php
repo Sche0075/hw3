@@ -8,24 +8,24 @@ include "a2-view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-     if (insertPlayers($_POST['cName'], $_POST['cPosition'], $_POST['cAge'])) {
-       echo '<div class="alert alert-success" role="alert">Course added.</div>';
+     if (insertPlayers($_POST['pName'], $_POST['pPosition'], $_POST['pAge'])) {
+       echo '<div class="alert alert-success" role="alert">Player added.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
      }
         break;    
 
     case "Edit":
-     if (updatePlayers($_POST['cName'], $_POST['cPosition'], $_POST['cAge'], $_POST['cid'])) {
-       echo '<div class="alert alert-success" role="alert">Course edited.</div>';
+     if (updatePlayers($_POST['pName'], $_POST['pPosition'], $_POST['pAge'], $_POST['pid'])) {
+       echo '<div class="alert alert-success" role="alert">Player edited.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
      }
         break;    
    
     case "Delete":
-     if (deletePlayers($_POST['cid'])) {
-       echo '<div class="alert alert-success" role="alert">Course deleted.</div>';
+     if (deletePlayers($_POST['pid'])) {
+       echo '<div class="alert alert-success" role="alert">Player deleted.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
      }
