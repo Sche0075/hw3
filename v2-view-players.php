@@ -18,6 +18,9 @@
         <th>Position</th>
         <th>Age</th>
         <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
       
