@@ -14,6 +14,14 @@ if (isset($_POST['actionType'])) {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
      }
         break;    
+
+    case "Edit":
+     if (updateCoaches($_POST['cName'], $_POST['cPosition'], $_POST['cAge'], $_POST['cid'])) {
+       echo '<div class="alert alert-success" role="alert">Course edited.</div>';
+     } else {
+       echo '<div class="alert alert-danger" role="alert">Error.</div>';
+     }
+        break;    
    
     case "Delete":
      if (deleteCoaches($_POST['cid'])) {
@@ -22,6 +30,7 @@ if (isset($_POST['actionType'])) {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
      }
         break;    
+    
   }  
 }
 
